@@ -1,0 +1,14 @@
+{
+  "name": "AutoML Chat Runner",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {},
+  "remoteUser": "root",
+  "postCreateCommand": "pip install -r runner/requirements.txt && pip install -r orchestrator/requirements.txt || true",
+  "customizations": {
+    "codespaces": { "openFiles": ["README.md", "runner/runner.py"] }
+  }
+}
+
+

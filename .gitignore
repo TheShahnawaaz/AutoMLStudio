@@ -1,0 +1,35 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.python-version
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+
+# Node/Next
+node_modules/
+.next/
+.turbo/
+dist/
+out/
+
+# Env/config
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# Project runtime data (do not commit)
+artifacts/
+uploads/
+runner_data/
+workspace/
+
+

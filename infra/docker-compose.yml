@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  orchestrator:
+    image: python:3.11-slim
+    working_dir: /app
+    command: bash -lc "pip install -r orchestrator/requirements.txt && uvicorn orchestrator.app.main:app --host 0.0.0.0 --port 8000"
+    volumes:
+      - ..:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    # TODO: Add Postgres and Redis services for non-MVP
+
+
